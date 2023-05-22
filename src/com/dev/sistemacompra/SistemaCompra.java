@@ -31,6 +31,7 @@ public class SistemaCompra {
         System.out.println("" + compra1.getDescripcion());
         System.out.println("Cliente: " + compra1.getCliente().getNombres() + " " + compra1.getCliente().getApellidoPaterno() + " " + compra1.getCliente().getApellidoMaterno());
         System.out.println("ID Cliente: " + compra1.getCliente().getIdCliente());
+        System.out.println("Fecha: " + compra1.getFecha().toString());
 
         ArrayList<Producto> productos1 = new ArrayList<>();
         ArrayList<Producto> productos2 = new ArrayList<>();
@@ -42,7 +43,7 @@ public class SistemaCompra {
         int totalCompra1 = 0;
         int totalCompra2 = 0;
 
-        System.out.println("Productos comprados por el cliente con ID: " + compra1.getCliente().getIdCliente());
+        System.out.println("Productos comprados por el cliente con ID: " + compra1.getCliente().getIdCliente() + "\n");
         for (Producto producto: productos1) {
             System.out.println("ID del Producto: " + producto.getIdProducto());
             System.out.println("Fabricante: " + producto.getFabricante());
