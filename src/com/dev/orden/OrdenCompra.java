@@ -87,21 +87,8 @@ public class OrdenCompra {
     }
 
     // Total de la compra
-    public Integer total() {
-
-        ArrayList<Producto> productos = this.getProductos();
+    public Integer total(int compraProducto1, int compraProducto2) {
         int total = 0;
-
-        for (Producto producto: productos) {
-            System.out.println("Identificador: " + producto.getIdProducto());
-            System.out.println("Fabricante: " + producto.getFabricante());
-            System.out.println("Nombre: " + producto.getNombre());
-            System.out.println("Precio: " + producto.getPrecio());
-
-            int subtotal = producto.getPrecio() + producto.getPrecio();
-            total = subtotal;
-        }
-
-        return total;
+        return total = compraProducto1 + compraProducto2;
     }
 }

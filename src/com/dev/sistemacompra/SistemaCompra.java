@@ -58,7 +58,7 @@ public class SistemaCompra {
             System.out.println("Precio: $" + producto.getPrecio());
             totalCompra2 = producto.getPrecio();
         }
-        int total = totalCompra1 + totalCompra2;
-        System.out.println("\n" + "Total de la compra: $" + total);
+        OrdenCompra total = new OrdenCompra();
+        System.out.println("\n" + "Total de la compra: $" + total.total(totalCompra1, totalCompra2));
     }
 }
